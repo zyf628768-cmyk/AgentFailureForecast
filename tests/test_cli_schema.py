@@ -14,7 +14,9 @@ from test_history import synthetic_history
 class CliTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
-        self.root = Path(self.temp.name)
+        # macOS exposes its temp location through /var -> /private/var.
+        # Use the canonical workspace path required by the link-rejection policy.
+        self.root = Path(self.temp.name).resolve()
         self.addCleanup(self.temp.cleanup)
         self.input = self.root / "plan.json"
         self.input.write_text(json.dumps(plan("deploy production")), encoding="utf-8")

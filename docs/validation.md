@@ -4,11 +4,11 @@ Validation date: 2026-10-19 (Asia/Shanghai). Environment: Windows x64, CPython 3
 
 ## Automated tests
 
-`python -m unittest discover -s tests -v`: **118 run, 118 passed, 0 failures, 0 errors, 0 skipped**. Full output: [test-results.txt](test-results.txt). Windows link tests were executed in an OS context permitting actual hard-link/symlink creation; no mocked link test or skip was counted as a pass.
+`python -m unittest discover -s tests -v`: **120 run, 120 passed, 0 failures, 0 errors, 0 skipped**. Full output: [test-results.txt](test-results.txt). Windows link tests were executed in an OS context permitting actual hard-link/symlink creation; no mocked link test or skip was counted as a pass.
 
 Coverage includes all eight risk categories, irreversible operations, Git clean/dirty and environment isolation, scoped Git trust, unsafe Git includes/worktree metadata/symlinks, prerequisite paths, missing tools/packages/environment variables, config errors, dependency graph validity/missing prerequisites/order/cycles/500-step limit, sensitive report filtering, inert Markdown/HTML, default offline behavior, no command execution, insufficient history, chronological splits, future outcome exclusion, calibration, baseline gating, test-label isolation, expanding backtests, Draft 2020-12 JSON Schema validation and all six CLI commands.
 
-The initial MVP suite had 84 passing tests. Pre-release review added 24 regression cases, and release readiness added ten more covering numeric overflow, declaration limits, legacy Windows reparse detection, policy exits and Unicode output. Real reproductions exposed hard-link target corruption, repository clean-filter execution, test-set model selection, delayed-result leakage, unverified plan provenance, missing group isolation and redaction/input ambiguities. These were fixed and the complete 118-case run passed. Old assertions about three-way splitting were updated to the corrected four-way contract; no failing case was removed or disabled. See [review findings](review-v0.1.0.md).
+The initial MVP suite had 84 passing tests. Pre-release review added 24 regression cases, and release readiness added ten more covering numeric overflow, declaration limits, legacy Windows reparse detection, policy exits and Unicode output. Real reproductions exposed hard-link target corruption, repository clean-filter execution, test-set model selection, delayed-result leakage, unverified plan provenance, missing group isolation and redaction/input ambiguities. These were fixed and the complete 120-case run passed. Old assertions about three-way splitting were updated to the corrected four-way contract; no failing case was removed or disabled. See [review findings](review-v0.1.0.md).
 
 ## Packaging and end-to-end acceptance
 
@@ -21,13 +21,15 @@ The initial MVP suite had 84 passing tests. Pre-release review added 24 regressi
 * Bundled skill-creator `quick_validate.py`: **Skill is valid!**
 * Example outputs are generated from the checked-in plan and deterministic 240-record synthetic fixture. The fixture can be regenerated with `python scripts/generate_examples.py`.
 
-The 16 report-generation acceptance calls and 18 distribution verification calls are additional to the 118 unittest cases, not extra unit tests. Test dependencies used locally: jsonschema 4.26.0; build 1.6.1; setuptools 84.0.0; wheel 0.48.0. The Skill/workflow YAML validation additionally used PyYAML 6.0.3. The engine itself has no third-party runtime dependencies. Distribution verification uses installed build dependencies and does not access a package index.
+The 16 report-generation acceptance calls and 18 distribution verification calls are additional to the 120 unittest cases, not extra unit tests. Test dependencies used locally: jsonschema 4.26.0; build 1.6.1; setuptools 84.0.0; wheel 0.48.0. The Skill/workflow YAML validation additionally used PyYAML 6.0.3. The engine itself has no third-party runtime dependencies. Distribution verification uses installed build dependencies and does not access a package index.
 
 ## Model capabilities actually checked
 
 Synthetic tests verify deterministic fitting, a separately fitted sigmoid calibrator, chronological training/calibration/selection/test blocks, selection-gated baseline comparison and untouched-test metrics. Changing final-test labels cannot alter eligibility, model version or weights, even with a single test class. Tests also cover delayed outcome availability, post-execution plan timestamps, absent provenance fallback, group leakage, temporal overlap, reliability bins and insufficient-data/class-support fallback. Timestamps and groups are declarations; data authenticity remains unverified. There are no real task records, external holdout results or verified prospective failure rates. Synthetic report scores must not be presented as real-world accuracy.
 
 ## Unverified and constrained
+
+The first remote matrix at [run 39239984151](https://github.com/zyf628768-cmyk/AgentFailureForecast/actions/runs/39239984151) exposed two fixture/build-setup defects: macOS temp paths used an OS symlink alias inconsistent with the output-link policy, and Windows Python 3.10/3.11 retained an older preinstalled setuptools for the no-isolation rebuild. Test workspaces now resolve their canonical path, CI explicitly installs `setuptools>=77`, and the distribution verifier checks that requirement with two new regression cases. The first gated release run skipped publication when these jobs failed. Actual passing remote results must refer to a later successful workflow run.
 
 * Linux/macOS and Python 3.10/3.11/3.13 have not been executed here. The GitHub Actions matrix is prepared, not remotely run.
 * Automatic Skill discovery/invocation in Codex, Claude Code and Cursor has not been tested. The standard entrypoint and installed CLI are verified locally.

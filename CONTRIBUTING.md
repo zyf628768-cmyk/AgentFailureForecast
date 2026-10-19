@@ -1,6 +1,6 @@
 # Contributing
 
-Use Python 3.10 or later. In a virtual environment run `python -m pip install -e ".[test]"` then `python -m unittest discover -s tests -v`. Runtime has no third-party dependencies. The test extra supplies the official JSON Schema validator.
+Use Python 3.10 or later. In a virtual environment run `python -m pip install -e ".[test]"` then `python -m unittest discover -s tests -v`. For offline distribution verification also install `build "setuptools>=77" wheel`; an older preinstalled backend cannot parse this project's license metadata. Runtime has no third-party dependencies. The test extra supplies the official JSON Schema validator. On systems with linked temporary-directory aliases, resolve the explicit test workspace path before testing output writes; the engine intentionally rejects linked output parents.
 
 For fixes, add a reproducible test of observable behavior, run the suite and CLI examples, and document limitations. Do not add network access, command execution or data collection to scanning. Rule changes need documented IDs and uncertainty levels. Historical features must be available before execution; fitting, calibration and evaluation must stay disjoint in time.
 

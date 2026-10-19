@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install --upgrade pip
-      - run: python -m pip install .[test] build setuptools wheel
+      - run: python -m pip install ".[test]" build "setuptools>=77" wheel
       - name: Run tests and preserve results
         shell: bash
         run: |

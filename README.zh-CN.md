@@ -54,7 +54,7 @@ forecast report --input scan.json --format html --output report.html
 ```sh
 python -m pip install -e ".[test]"
 python -m unittest discover -s tests -v
-python -m pip install build
+python -m pip install build "setuptools>=77" wheel
 python -m build
 python scripts/verify_distribution.py
 ```

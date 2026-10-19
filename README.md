@@ -88,7 +88,7 @@ Keep the full repository folder as the skill bundle, with [SKILL.md](SKILL.md) a
 ```sh
 python -m pip install -e ".[test]"
 python -m unittest discover -s tests -v
-python -m pip install build
+python -m pip install build "setuptools>=77" wheel
 python -m build
 python scripts/verify_distribution.py
 ```

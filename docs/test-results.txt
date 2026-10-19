@@ -83,6 +83,8 @@ test_temporal_splits (test_history.HistoryTests.test_temporal_splits) ... ok
 test_test_labels_do_not_change_fitting (test_history.HistoryTests.test_test_labels_do_not_change_fitting) ... ok
 test_timestamp_sort (test_history.HistoryTests.test_timestamp_sort) ... ok
 test_excessive_dependency_entries_rejected (test_release_readiness.InputLimitsTests.test_excessive_dependency_entries_rejected) ... ok
+test_offline_rebuild_accepts_declared_backend (test_release_readiness.InputLimitsTests.test_offline_rebuild_accepts_declared_backend) ... ok
+test_offline_rebuild_rejects_old_backend (test_release_readiness.InputLimitsTests.test_offline_rebuild_rejects_old_backend) ... ok
 test_overflowing_json_float_rejected (test_release_readiness.InputLimitsTests.test_overflowing_json_float_rejected) ... ok
 test_windows_reparse_without_is_junction_is_rejected (test_release_readiness.InputLimitsTests.test_windows_reparse_without_is_junction_is_rejected) ... ok
 test_default_exit_remains_success_for_risks (test_release_readiness.PolicyExitTests.test_default_exit_remains_success_for_risks) ... ok
@@ -118,6 +120,6 @@ test_prefixed_environment_assignment_redacted (test_review.OutputBoundaryTests.t
 test_quoted_json_secret_inside_text_redacted (test_review.OutputBoundaryTests.test_quoted_json_secret_inside_text_redacted) ... ok
 
 ----------------------------------------------------------------------
-Ran 118 tests in 10.364s
+Ran 120 tests in 9.790s
 
 OK

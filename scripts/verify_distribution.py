@@ -5,6 +5,7 @@ engine; this separate maintainer script explicitly builds our own release.
 """
 import argparse
 import json
+import importlib.metadata
 import os
 from pathlib import Path, PurePosixPath
 import subprocess
@@ -53,11 +54,21 @@ def python_files(wheel):
         return {name: archive.read(name) for name in archive.namelist() if name.startswith("agent_failure_forecast/") and name.endswith(".py")}
 
 
+def validate_build_backend():
+    try:
+        major = int(importlib.metadata.version("setuptools").split(".")[0])
+    except (importlib.metadata.PackageNotFoundError, ValueError):
+        major = 0
+    if major < 77:
+        raise ValueError('Offline rebuild requires setuptools>=77; install build "setuptools>=77" wheel in the development environment first')
+
+
 def main():
     parser = argparse.ArgumentParser(description="Verify sdist round-trip, offline wheel installation and all CLI commands")
     parser.add_argument("--dist", type=Path, default=Path("dist"))
     parser.add_argument("--output", type=Path, help="Explicit JSON evidence destination")
     args = parser.parse_args()
+    validate_build_backend()
     wheels = list(args.dist.resolve().glob("*.whl"))
     sources = list(args.dist.resolve().glob("*.tar.gz"))
     if len(wheels) != 1 or len(sources) != 1:

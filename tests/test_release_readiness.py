@@ -12,6 +12,17 @@ from agent_failure_forecast.safety import parse_json, safe_path, write_report
 
 
 class InputLimitsTests(unittest.TestCase):
+    def test_offline_rebuild_rejects_old_backend(self):
+        from scripts.verify_distribution import validate_build_backend
+        with patch("importlib.metadata.version", return_value="65.5.0"):
+            with self.assertRaisesRegex(ValueError, "setuptools>=77"):
+                validate_build_backend()
+
+    def test_offline_rebuild_accepts_declared_backend(self):
+        from scripts.verify_distribution import validate_build_backend
+        with patch("importlib.metadata.version", return_value="77.0.0"):
+            validate_build_backend()
+
     def test_windows_reparse_without_is_junction_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             with patch("agent_failure_forecast.safety.Path.lstat", return_value=SimpleNamespace(st_mode=0o040755, st_file_attributes=0x400)):
