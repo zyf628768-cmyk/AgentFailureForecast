@@ -1,5 +1,40 @@
 # AgentFailureForecast
 
+## 让 Agent 动手之前，先看清可能失败在哪里
+
+**给 AI Agent 一份执行前的风险检查单：发现隐患，说明证据，提出可验证的预防措施。**
+
+一次数据库迁移没有备份，一次部署没有回滚，一个步骤依赖尚未生成的文件——这些问题，值得在执行前被看见。AgentFailureForecast 将任务计划与本地环境一起检查，帮助你决定：哪些可以继续，哪些需要补齐条件，哪些必须先获得人工批准。
+
+**离线扫描 · 默认只读 · 8 类风险 / 27 条规则 · 无第三方运行时依赖 · 无需付费模型密钥**
+
+| 执行前的问题 | 工具给出的检查结果 |
+| --- | --- |
+| 文件会被覆盖，工作区还有未提交修改？ | 文件操作风险信号、Git 工作区状态和检查建议 |
+| 数据库变更没声明备份，生产部署缺少回滚？ | 高优先级风险、人工批准标记和预防措施 |
+| 工具、路径、环境变量或依赖包没准备好？ | 对声明的前置条件进行本地检查，给出缺失证据 |
+| 多步骤计划存在循环依赖或顺序错误？ | 可导出的 JSON 依赖图和具体依赖问题 |
+| Agent 读取了可疑指令，或计划无限重试？ | 指令注入、无界重试等词汇信号及审查建议 |
+
+适合在让 Agent **批量改文件、调整依赖、准备迁移或部署、执行多步骤任务**之前运行。支持独立 CLI，也提供供 Codex、Claude Code 等客户端集成的标准 [SKILL.md](SKILL.md)；客户端自动触发仍待实测。
+
+```sh
+# 在本项目目录安装后，用随附计划体验一次执行前检查
+forecast scan --root . --plan examples/plan.json
+# 在自动化流程中，发现 high 及以上风险时返回退出码 3
+forecast simulate --root . --plan examples/plan.json --fail-on high
+```
+
+随附计划会触发生产部署、数据库变更、缺少回滚/备份声明等风险；检查过程不会执行这些操作。查看 [实际报告](examples/report.md)、[完整中文指南](README.zh-CN.md) 或 [下载 v0.1.0 预发布版](https://github.com/zyf628768-cmyk/AgentFailureForecast/releases/tag/v0.1.0)。
+
+**可核验的交付：** v0.1.0 在 Windows、Linux、macOS × Python 3.10–3.13 的 12 组 CI 中，每组 120 项测试全部通过，并完成独立安装与 CLI 验证。[查看发布验证记录](https://github.com/zyf628768-cmyk/AgentFailureForecast/actions/runs/39241024824)。这些结果证明已测试行为与安装流程，不代表真实任务的预测准确率。
+
+当前为 v0.1.0 MVP。规则输出风险和准备度；可选历史模型在数据与验证条件满足时才输出概率，真实生产预测效果尚未验证。
+
+---
+
+## English overview
+
 **Predict Agent Failures Before They Happen.**
 
 An offline, read-only Python preflight engine and Agent Skill. Analyze a proposed task before execution: identify risk signals, validate declared prerequisites, inspect Git cleanliness and check the dependency graph. All six commands are implemented. No paid model key or third-party runtime dependency is required.
@@ -93,4 +128,4 @@ python -m build
 python scripts/verify_distribution.py
 ```
 
-See [contribution guide](CONTRIBUTING.md), [release procedure](docs/release.md) and [actual local validation](docs/validation.md). GitHub Actions config targets Linux/macOS/Windows and Python 3.10–3.13; local Windows Python 3.12 results do not verify the other matrix entries. MIT licensed.
+See [contribution guide](CONTRIBUTING.md), [release procedure](docs/release.md) and [validation details](docs/validation.md). The [v0.1.0 release workflow](https://github.com/zyf628768-cmyk/AgentFailureForecast/actions/runs/39241024824) passed all 12 Linux/macOS/Windows × Python 3.10–3.13 configurations, with 120 tests and distribution verification in each. MIT licensed.

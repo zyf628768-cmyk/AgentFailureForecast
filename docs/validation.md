@@ -1,5 +1,11 @@
 # Actual local validation — v0.1.0
 
+## Published release validation
+
+The [successful v0.1.0 release workflow](https://github.com/zyf628768-cmyk/AgentFailureForecast/actions/runs/39241024824) verified commit `48026992bbc84d4f1efaf6cb07fe076f6b41b1d8` on all 12 Windows/Linux/macOS × Python 3.10/3.11/3.12/3.13 configurations. Each ran **120 tests, all passed, zero skipped** (1,440 matrix test executions), rebuilt and verified the distribution, and passed 18 installed CLI invocations. The gated publish job succeeded. The [v0.1.0 release](https://github.com/zyf628768-cmyk/AgentFailureForecast/releases/tag/v0.1.0) is a prerelease. These results validate the tagged code and its packaging, not real-world forecast accuracy.
+
+The following sections preserve the local validation details and distinguish them from the remote results above.
+
 Validation date: 2026-10-19 (Asia/Shanghai). Environment: Windows x64, CPython 3.12.14, Git 2.53.0.windows.1.
 
 ## Automated tests
@@ -31,12 +37,12 @@ Synthetic tests verify deterministic fitting, a separately fitted sigmoid calibr
 
 The first remote matrix at [run 39239984151](https://github.com/zyf628768-cmyk/AgentFailureForecast/actions/runs/39239984151) exposed two fixture/build-setup defects: macOS temp paths used an OS symlink alias inconsistent with the output-link policy, and Windows Python 3.10/3.11 retained an older preinstalled setuptools for the no-isolation rebuild. Test workspaces now resolve their canonical path, CI explicitly installs `setuptools>=77`, and the distribution verifier checks that requirement with two new regression cases. The first gated release run skipped publication when these jobs failed. Actual passing remote results must refer to a later successful workflow run.
 
-* Linux/macOS and Python 3.10/3.11/3.13 have not been executed here. The GitHub Actions matrix is prepared, not remotely run.
+* Local validation used Windows/Python 3.12. The remaining platforms and Python versions were subsequently verified by the successful remote matrix linked above.
 * Automatic Skill discovery/invocation in Codex, Claude Code and Cursor has not been tested. The standard entrypoint and installed CLI are verified locally.
-* Official Skill discovery directories have been checked and documented. The release workflow YAML and its gating/permission structure parse successfully locally; actual remote workflow execution still requires the target repository. WSL was present only as an installer stub, and no Docker runtime was available, so no local Linux result is claimed.
+* Official Skill discovery directories have been checked and documented. The release workflow and gated publication subsequently succeeded remotely. WSL was present only as an installer stub, and no Docker runtime was available, so no local Linux result is claimed.
 * Git worktrees/submodules, active filter/diff/submodule config, linked metadata and local config includes are deliberately reported as unverified. Metadata over 10000 entries is not inspected.
 * Natural-language dependency inference, remote credential validity, real backup restoration and live deployment behavior are outside static simulation.
 * PATH tools and system Python/Git must be trusted; concurrent malicious filesystem mutations are outside the boundary guarantee. Redaction is best effort.
-* These are local validation results. Remote publication and matrix results must be established separately from actual GitHub workflow runs in the linked repository; the release workflow blocks publication until those jobs pass. No PyPI publication is performed by this project.
+* Local and remote results are identified separately above. The successful release workflow blocked publication until all matrix jobs passed. No PyPI publication is performed by this project.
 
 For the prepared local commit/tag and final clean status, inspect the delivered repository. Source zip, sdist, wheel and SHA256SUMS are supplied in the sibling release directory.

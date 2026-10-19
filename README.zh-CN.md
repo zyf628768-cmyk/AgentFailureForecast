@@ -1,14 +1,43 @@
 # AgentFailureForecast
 
-**在 Agent 执行前识别潜在失败点。**
+**让 Agent 动手之前，先看清可能失败在哪里。**
+
+让 AI 写出执行计划越来越容易。真正影响交付的，往往是计划之外的条件：工作区还有未提交修改、依赖没有装好、迁移没有备份、部署没有回滚，或后一步需要的产物根本没有前一步生成。
+
+AgentFailureForecast 把这些问题变成一份**有证据、有优先级、有检查和修复建议的执行前风险报告**。先扫描，再补齐条件，最后由你或上层 Agent 决定是否执行。
+
+**离线扫描 · 默认只读 · 8 类风险 / 27 条透明规则 · 无第三方运行时依赖 · 无需付费模型密钥**
+
+[下载 v0.1.0 预发布版](https://github.com/zyf628768-cmyk/AgentFailureForecast/releases/tag/v0.1.0) · [查看实际报告](examples/report.md) · [发布验证记录](https://github.com/zyf628768-cmyk/AgentFailureForecast/actions/runs/39241024824) · [English](README.md#english-overview)
+
+## 哪些时候值得先检查
+
+| 你的任务 | 执行前能获得什么 |
+| --- | --- |
+| 让 Agent 批量删除、覆盖或重构文件 | 危险操作信号、未提交修改提醒、目标与备份检查建议 |
+| 准备数据库迁移或生产部署 | 备份与回滚声明检查、不可逆操作风险和人工批准标记 |
+| 接手陌生项目或调整运行环境 | 对声明的工具、路径、环境变量和依赖版本逐项检查 |
+| 执行多步骤计划 | 循环依赖、缺失前置产物和顺序错误检查，以及 JSON 依赖图 |
+| 给 Agent 接入外部内容或重试流程 | 可疑指令和无限重试词汇信号、信任边界与停止条件建议 |
+
+每项风险都会说明**为什么触发、可能影响什么、如何检查、如何修复、是否需要批准**。可以先读 Markdown 报告，也可以让上层 Agent 消费 JSON，把检查接进现有执行流程。
+
+## 为什么值得尝试
+
+- **拿到就能运行：** 六个 CLI 命令均已实现，随附计划、合成历史数据与报告，可在本地复现。
+- **结论可以追问：** 区分本地确认问题、文本风险信号和信息不足的推测；准备度不冒充成功概率。
+- **分析不必上传项目：** 扫描默认离线、只读，不执行计划命令，不调用付费模型。
+- **交付有可查看的证据：** v0.1.0 的 12 组跨平台 CI 每组通过 120 项测试，并验证独立安装与 CLI；详见上方发布验证记录。
 
 这是可安装、可运行的 Python CLI 与标准 Agent Skill，不依赖付费模型密钥。默认离线、只读，不执行待检查任务中的命令。v0.1.0 使用透明规则；可选历史模型仅用合成数据验证机制，尚无真实生产预测效果证据。
 
 ## 安装与运行
 
-需要 Python 3.10+，Git 用于检查工作区。进入本项目目录：
+需要 Python 3.10+，Git 用于检查工作区。克隆仓库后安装：
 
 ```sh
+git clone https://github.com/zyf628768-cmyk/AgentFailureForecast.git
+cd AgentFailureForecast
 python -m venv .venv
 # Windows PowerShell: .venv\Scripts\Activate.ps1
 # Linux/macOS: source .venv/bin/activate
@@ -28,6 +57,23 @@ forecast report --input scan.json --format html --output report.html
 也可安装 Release wheel；使用 `pip install --no-index wheel文件路径` 可完全离线安装。源码构建依赖首次可能需要下载；扫描不联网。可用 `python -m agent_failure_forecast` 替代 `forecast`。
 
 命令默认输出至标准输出，仅指定 `--output` 才写报告；已有文件需要 `--force` 原子替换。默认退出码 0 表示分析完成，**不表示任务安全**；退出码 2 表示输入输出错误。scan/plan/simulate/predict 可添加 `--fail-on high`，先写报告，达到风险阈值后返回退出码 3。上层 Agent 仍须查看批准字段。
+
+例如，将高风险检查接入自动化流程：
+
+```sh
+forecast simulate --root . --plan examples/plan.json --fail-on high
+```
+
+随附计划含生产数据库迁移且未声明备份和回滚，因此该示例应返回退出码 3；这表示风险阈值生效。所有命令均支持 `--help`。
+
+| 命令 | 用途 |
+| --- | --- |
+| `forecast scan` | 汇总任务与本地环境风险 |
+| `forecast plan` | 检查计划依赖并输出依赖图 |
+| `forecast simulate` | 对声明的前置条件做静态预演 |
+| `forecast predict` | 使用规则，或在数据和验证达标时使用历史模型 |
+| `forecast backtest` | 按时间窗口回测历史模型并与基准比较 |
+| `forecast report` | 把分析 JSON 转成 Markdown 或 HTML 报告 |
 
 ## 输入与输出
 
@@ -59,4 +105,4 @@ python -m build
 python scripts/verify_distribution.py
 ```
 
-实际验证见 [docs/validation.md](docs/validation.md)，发布方法见 [docs/release.md](docs/release.md)。本地仅验证 Windows/Python 3.12；Linux/macOS 和其他 Python 版本配置了 CI，尚未执行，不能视为通过。许可证 MIT。
+实际验证见 [docs/validation.md](docs/validation.md)，发布方法见 [docs/release.md](docs/release.md)。[v0.1.0 发布工作流](https://github.com/zyf628768-cmyk/AgentFailureForecast/actions/runs/39241024824)已通过 Windows、Linux、macOS × Python 3.10–3.13 的全部 12 组验证：每组 120 项测试通过、零跳过，并完成分发包验证及 18 次安装后 CLI 调用。客户端 Skill 自动触发与真实任务预测效果仍待验证。许可证 MIT。
