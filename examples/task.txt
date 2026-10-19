@@ -1,0 +1,3 @@
+Review local project configuration
+Run validation in an isolated environment
+Prepare a release archive

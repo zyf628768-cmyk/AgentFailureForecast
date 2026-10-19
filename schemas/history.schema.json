@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agent-failure-forecast:history:1",
+  "type": "array", "maxItems": 10000,
+  "items": {
+    "type": "object", "required": ["task_id", "started_at", "finished_at", "failed", "plan"],
+    "properties": {
+      "task_id": {"type": "string", "minLength": 1},
+      "started_at": {"type": "string", "format": "date-time"},
+      "finished_at": {"type": "string", "format": "date-time"},
+      "plan_recorded_at": {"type": "string", "format": "date-time"},
+      "outcome_recorded_at": {"type": "string", "format": "date-time"},
+      "group_id": {"type": "string", "minLength": 1},
+      "failed": {"type": "boolean"},
+      "plan": {"type": "object"},
+      "tools_used": {"type": "array", "items": {"type": "string"}},
+      "failure_type": {"type": "string"}
+    }
+  }
+}

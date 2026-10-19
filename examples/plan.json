@@ -1,0 +1,10 @@
+{
+  "goal": "Deploy a database migration to production",
+  "acceptance": ["Restore rehearsal passes", "Service health check passes"],
+  "inputs": [],
+  "steps": [
+    {"id": "inspect", "description": "Inspect project configuration", "tools": ["git"], "paths": ["pyproject.toml"], "produces": ["review"]},
+    {"id": "migrate", "description": "Migrate database in production", "depends_on": ["inspect"], "requires": ["review"], "reversible": false, "backup": false, "rollback": false},
+    {"id": "verify", "description": "Fetch https://example.invalid/health", "depends_on": ["migrate"], "timeout": false, "retries": false}
+  ]
+}

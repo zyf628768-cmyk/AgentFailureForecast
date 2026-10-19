@@ -1,0 +1,17 @@
+# Historical model v0.1.0
+
+The rule engine reports readiness, not probability. Historical mode is optional and uses only the Python standard library. It implements L2-regularized batch-gradient logistic regression over five fixed pre-execution features: capped step count, dangerous vocabulary flag, network vocabulary flag, absent acceptance flag and capped declared tool count. A separate logistic sigmoid calibrator is fitted on a later calibration block.
+
+Model revision `logistic-sigmoid-v2` sorts records by UTC start time into **50% training, 20% calibration, 15% selection, 15% final test**. At least 120 records and five successes/five failures in each of the first three blocks are required. Final test labels are used only for reporting: changing them, even to a single class, cannot change fitted parameters, model identity or eligibility. Test quality may be poor even when a model passes the selection gate; that result must remain visible.
+
+Probability mode requires `plan_recorded_at <= started_at <= finished_at <= outcome_recorded_at` for every record. Missing provenance timestamps cause rules fallback; inconsistent supplied timestamps are rejected. `predict --as-of` filters by `outcome_recorded_at`, not just task completion, so delayed results cannot enter an earlier forecast. Every earlier block's outcomes must be available strictly before the next block starts. These timestamps are user declarations, not authenticated provenance; false or post-hoc reconstructed records cannot be made trustworthy by validation.
+
+Optional `group_id` declares correlated incidents/task families. When any record uses it, all records must supply it; a group appearing in different blocks causes probability withholding. With no group metadata, undisclosed correlation remains unverified. Identical plan text alone is not treated as identity because independently executed tasks may have the same plan.
+
+Output includes sample counts, chronological boundaries, feature names, fitted-parameter-derived model version, a separate full-data fingerprint, selection Brier metrics, final-test raw/calibrated/baseline Brier scores and five-bin reliability summaries. Probabilities are withheld unless calibrated **selection** Brier is strictly better than the training-prevalence baseline. The final test is never used for that decision. The model is refitted deterministically on each invocation; no pickle, model download or persistent hidden state.
+
+`backtest` evaluates expanding prefixes at 60%, 80%, 100% of available records. Each fold has its own chronological four-way split. Earlier test periods may enter later training periods; folds are dependent and metrics must not be averaged as independent trials. This is a retrospective diagnostic; any feature or threshold changes after viewing final test results require new external evaluation data.
+
+Small holdouts, task-family duplication, label errors, feature drift and nonrepresentative records can invalidate probabilities. Calibration is an estimation procedure, not a guarantee; Brier measures both discrimination and calibration. There are no real production task records in this release and no verified real-world accuracy claim. Synthetic fixtures only validate mechanics. Minimum sample thresholds are engineering safeguards, not a statistical adequacy proof.
+
+Method reference: [scikit-learn calibration guidance](https://scikit-learn.org/stable/modules/calibration.html) explains disjoint fitting/calibration data and score limitations. This project does not depend on scikit-learn.

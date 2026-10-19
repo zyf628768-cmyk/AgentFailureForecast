@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "sdist_roundtrip": "passed; engine Python files byte-identical",
+  "source_manifest": "passed",
+  "fresh_offline_wheel_install": "passed",
+  "runtime_dependencies": [],
+  "import_outside_source": "passed",
+  "cli_invocations": 18,
+  "commands": [
+    "scan",
+    "plan",
+    "simulate",
+    "predict",
+    "scan --fail-on high (expected exit 3)",
+    "predict --history (synthetic)",
+    "backtest",
+    "report --format json",
+    "report --format markdown",
+    "report --format html",
+    "--help",
+    "scan --help",
+    "plan --help",
+    "simulate --help",
+    "predict --help",
+    "backtest --help",
+    "report --help",
+    "--version"
+  ],
+  "synthetic_only": true
+}

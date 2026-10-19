@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agent-failure-forecast:report:1",
+  "type": "object",
+  "required": ["schema_version", "engine_version", "mode", "readiness", "readiness_is_probability", "failure_probability", "findings", "checks", "graph", "limitations"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "engine_version": {"type": "string"},
+    "mode": {"enum": ["rules", "statistical"]},
+    "readiness": {"type": "integer", "minimum": 0, "maximum": 100},
+    "readiness_is_probability": {"const": false},
+    "failure_probability": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "checks": {"type": "array", "items": {"type": "object"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "graph": {"$ref": "#/$defs/graph"}
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "required": ["id", "category", "severity", "evidence", "impact", "checks", "repairs", "requires_approval", "certainty"],
+      "properties": {
+        "id": {"type": "string"},
+        "category": {"enum": ["environment", "file", "data", "permission", "network", "deployment", "task", "agent"]},
+        "severity": {"enum": ["low", "medium", "high", "critical"]},
+        "evidence": {"type": "string"},
+        "impact": {"type": "string"},
+        "checks": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "repairs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "requires_approval": {"type": "boolean"},
+        "certainty": {"enum": ["confirmed", "signal", "speculative"]},
+        "occurrences": {"type": "integer", "minimum": 1}
+      }
+    },
+    "graph": {
+      "type": "object", "required": ["nodes", "edges", "topological_order", "cyclic", "findings"],
+      "properties": {
+        "nodes": {"type": "array", "items": {"type": "string"}},
+        "edges": {"type": "array", "items": {"type": "object", "required": ["from", "to"], "properties": {"from": {"type": "string"}, "to": {"type": "string"}}}},
+        "topological_order": {"type": "array", "items": {"type": "string"}},
+        "cyclic": {"type": "boolean"},
+        "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}}
+      }
+    }
+  }
+}

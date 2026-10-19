@@ -1,0 +1,5282 @@
+[
+  {
+    "task_id": "synthetic-0",
+    "started_at": "2025-01-01T00:00:00+00:00",
+    "finished_at": "2025-01-01T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-01T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-1",
+    "started_at": "2025-01-01T02:00:00+00:00",
+    "finished_at": "2025-01-01T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-01T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-2",
+    "started_at": "2025-01-01T04:00:00+00:00",
+    "finished_at": "2025-01-01T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-01T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-3",
+    "started_at": "2025-01-01T06:00:00+00:00",
+    "finished_at": "2025-01-01T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-01T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-4",
+    "started_at": "2025-01-01T08:00:00+00:00",
+    "finished_at": "2025-01-01T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-01T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-5",
+    "started_at": "2025-01-01T10:00:00+00:00",
+    "finished_at": "2025-01-01T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-01T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-6",
+    "started_at": "2025-01-01T12:00:00+00:00",
+    "finished_at": "2025-01-01T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-01T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-7",
+    "started_at": "2025-01-01T14:00:00+00:00",
+    "finished_at": "2025-01-01T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-01T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-8",
+    "started_at": "2025-01-01T16:00:00+00:00",
+    "finished_at": "2025-01-01T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-01T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-9",
+    "started_at": "2025-01-01T18:00:00+00:00",
+    "finished_at": "2025-01-01T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-01T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-10",
+    "started_at": "2025-01-01T20:00:00+00:00",
+    "finished_at": "2025-01-01T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-01T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-11",
+    "started_at": "2025-01-01T22:00:00+00:00",
+    "finished_at": "2025-01-01T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-01T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-01T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-12",
+    "started_at": "2025-01-02T00:00:00+00:00",
+    "finished_at": "2025-01-02T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-02T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-13",
+    "started_at": "2025-01-02T02:00:00+00:00",
+    "finished_at": "2025-01-02T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-02T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-14",
+    "started_at": "2025-01-02T04:00:00+00:00",
+    "finished_at": "2025-01-02T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-02T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-15",
+    "started_at": "2025-01-02T06:00:00+00:00",
+    "finished_at": "2025-01-02T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-02T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-16",
+    "started_at": "2025-01-02T08:00:00+00:00",
+    "finished_at": "2025-01-02T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-02T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-17",
+    "started_at": "2025-01-02T10:00:00+00:00",
+    "finished_at": "2025-01-02T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-02T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-18",
+    "started_at": "2025-01-02T12:00:00+00:00",
+    "finished_at": "2025-01-02T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-02T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-19",
+    "started_at": "2025-01-02T14:00:00+00:00",
+    "finished_at": "2025-01-02T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-02T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-20",
+    "started_at": "2025-01-02T16:00:00+00:00",
+    "finished_at": "2025-01-02T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-02T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-21",
+    "started_at": "2025-01-02T18:00:00+00:00",
+    "finished_at": "2025-01-02T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-02T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-22",
+    "started_at": "2025-01-02T20:00:00+00:00",
+    "finished_at": "2025-01-02T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-02T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-23",
+    "started_at": "2025-01-02T22:00:00+00:00",
+    "finished_at": "2025-01-02T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-02T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-02T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-24",
+    "started_at": "2025-01-03T00:00:00+00:00",
+    "finished_at": "2025-01-03T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-03T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-25",
+    "started_at": "2025-01-03T02:00:00+00:00",
+    "finished_at": "2025-01-03T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-03T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-26",
+    "started_at": "2025-01-03T04:00:00+00:00",
+    "finished_at": "2025-01-03T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-03T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-27",
+    "started_at": "2025-01-03T06:00:00+00:00",
+    "finished_at": "2025-01-03T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-03T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-28",
+    "started_at": "2025-01-03T08:00:00+00:00",
+    "finished_at": "2025-01-03T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-03T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-29",
+    "started_at": "2025-01-03T10:00:00+00:00",
+    "finished_at": "2025-01-03T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-03T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-30",
+    "started_at": "2025-01-03T12:00:00+00:00",
+    "finished_at": "2025-01-03T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-03T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-31",
+    "started_at": "2025-01-03T14:00:00+00:00",
+    "finished_at": "2025-01-03T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-03T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-32",
+    "started_at": "2025-01-03T16:00:00+00:00",
+    "finished_at": "2025-01-03T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-03T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-33",
+    "started_at": "2025-01-03T18:00:00+00:00",
+    "finished_at": "2025-01-03T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-03T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-34",
+    "started_at": "2025-01-03T20:00:00+00:00",
+    "finished_at": "2025-01-03T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-03T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-35",
+    "started_at": "2025-01-03T22:00:00+00:00",
+    "finished_at": "2025-01-03T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-03T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-03T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-36",
+    "started_at": "2025-01-04T00:00:00+00:00",
+    "finished_at": "2025-01-04T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-04T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-37",
+    "started_at": "2025-01-04T02:00:00+00:00",
+    "finished_at": "2025-01-04T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-04T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-38",
+    "started_at": "2025-01-04T04:00:00+00:00",
+    "finished_at": "2025-01-04T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-04T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-39",
+    "started_at": "2025-01-04T06:00:00+00:00",
+    "finished_at": "2025-01-04T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-04T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-40",
+    "started_at": "2025-01-04T08:00:00+00:00",
+    "finished_at": "2025-01-04T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-04T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-41",
+    "started_at": "2025-01-04T10:00:00+00:00",
+    "finished_at": "2025-01-04T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-04T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-42",
+    "started_at": "2025-01-04T12:00:00+00:00",
+    "finished_at": "2025-01-04T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-04T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-43",
+    "started_at": "2025-01-04T14:00:00+00:00",
+    "finished_at": "2025-01-04T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-04T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-44",
+    "started_at": "2025-01-04T16:00:00+00:00",
+    "finished_at": "2025-01-04T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-04T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-45",
+    "started_at": "2025-01-04T18:00:00+00:00",
+    "finished_at": "2025-01-04T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-04T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-46",
+    "started_at": "2025-01-04T20:00:00+00:00",
+    "finished_at": "2025-01-04T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-04T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-47",
+    "started_at": "2025-01-04T22:00:00+00:00",
+    "finished_at": "2025-01-04T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-04T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-04T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-48",
+    "started_at": "2025-01-05T00:00:00+00:00",
+    "finished_at": "2025-01-05T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-05T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-49",
+    "started_at": "2025-01-05T02:00:00+00:00",
+    "finished_at": "2025-01-05T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-05T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-50",
+    "started_at": "2025-01-05T04:00:00+00:00",
+    "finished_at": "2025-01-05T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-05T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-51",
+    "started_at": "2025-01-05T06:00:00+00:00",
+    "finished_at": "2025-01-05T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-05T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-52",
+    "started_at": "2025-01-05T08:00:00+00:00",
+    "finished_at": "2025-01-05T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-05T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-53",
+    "started_at": "2025-01-05T10:00:00+00:00",
+    "finished_at": "2025-01-05T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-05T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-54",
+    "started_at": "2025-01-05T12:00:00+00:00",
+    "finished_at": "2025-01-05T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-05T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-55",
+    "started_at": "2025-01-05T14:00:00+00:00",
+    "finished_at": "2025-01-05T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-05T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-56",
+    "started_at": "2025-01-05T16:00:00+00:00",
+    "finished_at": "2025-01-05T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-05T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-57",
+    "started_at": "2025-01-05T18:00:00+00:00",
+    "finished_at": "2025-01-05T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-05T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-58",
+    "started_at": "2025-01-05T20:00:00+00:00",
+    "finished_at": "2025-01-05T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-05T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-59",
+    "started_at": "2025-01-05T22:00:00+00:00",
+    "finished_at": "2025-01-05T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-05T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-05T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-60",
+    "started_at": "2025-01-06T00:00:00+00:00",
+    "finished_at": "2025-01-06T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-06T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-61",
+    "started_at": "2025-01-06T02:00:00+00:00",
+    "finished_at": "2025-01-06T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-06T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-62",
+    "started_at": "2025-01-06T04:00:00+00:00",
+    "finished_at": "2025-01-06T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-06T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-63",
+    "started_at": "2025-01-06T06:00:00+00:00",
+    "finished_at": "2025-01-06T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-06T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-64",
+    "started_at": "2025-01-06T08:00:00+00:00",
+    "finished_at": "2025-01-06T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-06T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-65",
+    "started_at": "2025-01-06T10:00:00+00:00",
+    "finished_at": "2025-01-06T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-06T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-66",
+    "started_at": "2025-01-06T12:00:00+00:00",
+    "finished_at": "2025-01-06T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-06T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-67",
+    "started_at": "2025-01-06T14:00:00+00:00",
+    "finished_at": "2025-01-06T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-06T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-68",
+    "started_at": "2025-01-06T16:00:00+00:00",
+    "finished_at": "2025-01-06T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-06T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-69",
+    "started_at": "2025-01-06T18:00:00+00:00",
+    "finished_at": "2025-01-06T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-06T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-70",
+    "started_at": "2025-01-06T20:00:00+00:00",
+    "finished_at": "2025-01-06T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-06T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-71",
+    "started_at": "2025-01-06T22:00:00+00:00",
+    "finished_at": "2025-01-06T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-06T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-06T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-72",
+    "started_at": "2025-01-07T00:00:00+00:00",
+    "finished_at": "2025-01-07T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-07T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-73",
+    "started_at": "2025-01-07T02:00:00+00:00",
+    "finished_at": "2025-01-07T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-07T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-74",
+    "started_at": "2025-01-07T04:00:00+00:00",
+    "finished_at": "2025-01-07T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-07T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-75",
+    "started_at": "2025-01-07T06:00:00+00:00",
+    "finished_at": "2025-01-07T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-07T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-76",
+    "started_at": "2025-01-07T08:00:00+00:00",
+    "finished_at": "2025-01-07T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-07T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-77",
+    "started_at": "2025-01-07T10:00:00+00:00",
+    "finished_at": "2025-01-07T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-07T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-78",
+    "started_at": "2025-01-07T12:00:00+00:00",
+    "finished_at": "2025-01-07T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-07T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-79",
+    "started_at": "2025-01-07T14:00:00+00:00",
+    "finished_at": "2025-01-07T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-07T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-80",
+    "started_at": "2025-01-07T16:00:00+00:00",
+    "finished_at": "2025-01-07T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-07T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-81",
+    "started_at": "2025-01-07T18:00:00+00:00",
+    "finished_at": "2025-01-07T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-07T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-82",
+    "started_at": "2025-01-07T20:00:00+00:00",
+    "finished_at": "2025-01-07T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-07T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-83",
+    "started_at": "2025-01-07T22:00:00+00:00",
+    "finished_at": "2025-01-07T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-07T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-07T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-84",
+    "started_at": "2025-01-08T00:00:00+00:00",
+    "finished_at": "2025-01-08T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-08T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-85",
+    "started_at": "2025-01-08T02:00:00+00:00",
+    "finished_at": "2025-01-08T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-08T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-86",
+    "started_at": "2025-01-08T04:00:00+00:00",
+    "finished_at": "2025-01-08T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-08T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-87",
+    "started_at": "2025-01-08T06:00:00+00:00",
+    "finished_at": "2025-01-08T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-08T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-88",
+    "started_at": "2025-01-08T08:00:00+00:00",
+    "finished_at": "2025-01-08T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-08T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-89",
+    "started_at": "2025-01-08T10:00:00+00:00",
+    "finished_at": "2025-01-08T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-08T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-90",
+    "started_at": "2025-01-08T12:00:00+00:00",
+    "finished_at": "2025-01-08T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-08T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-91",
+    "started_at": "2025-01-08T14:00:00+00:00",
+    "finished_at": "2025-01-08T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-08T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-92",
+    "started_at": "2025-01-08T16:00:00+00:00",
+    "finished_at": "2025-01-08T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-08T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-93",
+    "started_at": "2025-01-08T18:00:00+00:00",
+    "finished_at": "2025-01-08T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-08T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-94",
+    "started_at": "2025-01-08T20:00:00+00:00",
+    "finished_at": "2025-01-08T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-08T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-95",
+    "started_at": "2025-01-08T22:00:00+00:00",
+    "finished_at": "2025-01-08T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-08T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-08T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-96",
+    "started_at": "2025-01-09T00:00:00+00:00",
+    "finished_at": "2025-01-09T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-09T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-97",
+    "started_at": "2025-01-09T02:00:00+00:00",
+    "finished_at": "2025-01-09T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-09T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-98",
+    "started_at": "2025-01-09T04:00:00+00:00",
+    "finished_at": "2025-01-09T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-09T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-99",
+    "started_at": "2025-01-09T06:00:00+00:00",
+    "finished_at": "2025-01-09T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-09T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-100",
+    "started_at": "2025-01-09T08:00:00+00:00",
+    "finished_at": "2025-01-09T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-09T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-101",
+    "started_at": "2025-01-09T10:00:00+00:00",
+    "finished_at": "2025-01-09T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-09T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-102",
+    "started_at": "2025-01-09T12:00:00+00:00",
+    "finished_at": "2025-01-09T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-09T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-103",
+    "started_at": "2025-01-09T14:00:00+00:00",
+    "finished_at": "2025-01-09T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-09T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-104",
+    "started_at": "2025-01-09T16:00:00+00:00",
+    "finished_at": "2025-01-09T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-09T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-105",
+    "started_at": "2025-01-09T18:00:00+00:00",
+    "finished_at": "2025-01-09T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-09T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-106",
+    "started_at": "2025-01-09T20:00:00+00:00",
+    "finished_at": "2025-01-09T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-09T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-107",
+    "started_at": "2025-01-09T22:00:00+00:00",
+    "finished_at": "2025-01-09T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-09T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-09T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-108",
+    "started_at": "2025-01-10T00:00:00+00:00",
+    "finished_at": "2025-01-10T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-10T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-109",
+    "started_at": "2025-01-10T02:00:00+00:00",
+    "finished_at": "2025-01-10T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-10T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-110",
+    "started_at": "2025-01-10T04:00:00+00:00",
+    "finished_at": "2025-01-10T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-10T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-111",
+    "started_at": "2025-01-10T06:00:00+00:00",
+    "finished_at": "2025-01-10T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-10T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-112",
+    "started_at": "2025-01-10T08:00:00+00:00",
+    "finished_at": "2025-01-10T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-10T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-113",
+    "started_at": "2025-01-10T10:00:00+00:00",
+    "finished_at": "2025-01-10T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-10T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-114",
+    "started_at": "2025-01-10T12:00:00+00:00",
+    "finished_at": "2025-01-10T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-10T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-115",
+    "started_at": "2025-01-10T14:00:00+00:00",
+    "finished_at": "2025-01-10T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-10T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-116",
+    "started_at": "2025-01-10T16:00:00+00:00",
+    "finished_at": "2025-01-10T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-10T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-117",
+    "started_at": "2025-01-10T18:00:00+00:00",
+    "finished_at": "2025-01-10T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-10T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-118",
+    "started_at": "2025-01-10T20:00:00+00:00",
+    "finished_at": "2025-01-10T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-10T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-119",
+    "started_at": "2025-01-10T22:00:00+00:00",
+    "finished_at": "2025-01-10T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-10T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-10T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-120",
+    "started_at": "2025-01-11T00:00:00+00:00",
+    "finished_at": "2025-01-11T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-11T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-121",
+    "started_at": "2025-01-11T02:00:00+00:00",
+    "finished_at": "2025-01-11T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-11T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-122",
+    "started_at": "2025-01-11T04:00:00+00:00",
+    "finished_at": "2025-01-11T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-11T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-123",
+    "started_at": "2025-01-11T06:00:00+00:00",
+    "finished_at": "2025-01-11T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-11T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-124",
+    "started_at": "2025-01-11T08:00:00+00:00",
+    "finished_at": "2025-01-11T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-11T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-125",
+    "started_at": "2025-01-11T10:00:00+00:00",
+    "finished_at": "2025-01-11T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-11T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-126",
+    "started_at": "2025-01-11T12:00:00+00:00",
+    "finished_at": "2025-01-11T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-11T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-127",
+    "started_at": "2025-01-11T14:00:00+00:00",
+    "finished_at": "2025-01-11T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-11T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-128",
+    "started_at": "2025-01-11T16:00:00+00:00",
+    "finished_at": "2025-01-11T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-11T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-129",
+    "started_at": "2025-01-11T18:00:00+00:00",
+    "finished_at": "2025-01-11T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-11T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-130",
+    "started_at": "2025-01-11T20:00:00+00:00",
+    "finished_at": "2025-01-11T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-11T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-131",
+    "started_at": "2025-01-11T22:00:00+00:00",
+    "finished_at": "2025-01-11T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-11T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-11T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-132",
+    "started_at": "2025-01-12T00:00:00+00:00",
+    "finished_at": "2025-01-12T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-12T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-133",
+    "started_at": "2025-01-12T02:00:00+00:00",
+    "finished_at": "2025-01-12T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-12T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-134",
+    "started_at": "2025-01-12T04:00:00+00:00",
+    "finished_at": "2025-01-12T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-12T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-135",
+    "started_at": "2025-01-12T06:00:00+00:00",
+    "finished_at": "2025-01-12T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-12T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-136",
+    "started_at": "2025-01-12T08:00:00+00:00",
+    "finished_at": "2025-01-12T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-12T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-137",
+    "started_at": "2025-01-12T10:00:00+00:00",
+    "finished_at": "2025-01-12T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-12T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-138",
+    "started_at": "2025-01-12T12:00:00+00:00",
+    "finished_at": "2025-01-12T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-12T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-139",
+    "started_at": "2025-01-12T14:00:00+00:00",
+    "finished_at": "2025-01-12T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-12T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-140",
+    "started_at": "2025-01-12T16:00:00+00:00",
+    "finished_at": "2025-01-12T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-12T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-141",
+    "started_at": "2025-01-12T18:00:00+00:00",
+    "finished_at": "2025-01-12T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-12T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-142",
+    "started_at": "2025-01-12T20:00:00+00:00",
+    "finished_at": "2025-01-12T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-12T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-143",
+    "started_at": "2025-01-12T22:00:00+00:00",
+    "finished_at": "2025-01-12T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-12T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-12T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-144",
+    "started_at": "2025-01-13T00:00:00+00:00",
+    "finished_at": "2025-01-13T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-13T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-145",
+    "started_at": "2025-01-13T02:00:00+00:00",
+    "finished_at": "2025-01-13T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-13T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-146",
+    "started_at": "2025-01-13T04:00:00+00:00",
+    "finished_at": "2025-01-13T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-13T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-147",
+    "started_at": "2025-01-13T06:00:00+00:00",
+    "finished_at": "2025-01-13T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-13T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-148",
+    "started_at": "2025-01-13T08:00:00+00:00",
+    "finished_at": "2025-01-13T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-13T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-149",
+    "started_at": "2025-01-13T10:00:00+00:00",
+    "finished_at": "2025-01-13T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-13T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-150",
+    "started_at": "2025-01-13T12:00:00+00:00",
+    "finished_at": "2025-01-13T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-13T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-151",
+    "started_at": "2025-01-13T14:00:00+00:00",
+    "finished_at": "2025-01-13T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-13T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-152",
+    "started_at": "2025-01-13T16:00:00+00:00",
+    "finished_at": "2025-01-13T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-13T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-153",
+    "started_at": "2025-01-13T18:00:00+00:00",
+    "finished_at": "2025-01-13T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-13T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-154",
+    "started_at": "2025-01-13T20:00:00+00:00",
+    "finished_at": "2025-01-13T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-13T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-155",
+    "started_at": "2025-01-13T22:00:00+00:00",
+    "finished_at": "2025-01-13T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-13T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-13T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-156",
+    "started_at": "2025-01-14T00:00:00+00:00",
+    "finished_at": "2025-01-14T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-14T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-157",
+    "started_at": "2025-01-14T02:00:00+00:00",
+    "finished_at": "2025-01-14T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-14T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-158",
+    "started_at": "2025-01-14T04:00:00+00:00",
+    "finished_at": "2025-01-14T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-14T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-159",
+    "started_at": "2025-01-14T06:00:00+00:00",
+    "finished_at": "2025-01-14T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-14T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-160",
+    "started_at": "2025-01-14T08:00:00+00:00",
+    "finished_at": "2025-01-14T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-14T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-161",
+    "started_at": "2025-01-14T10:00:00+00:00",
+    "finished_at": "2025-01-14T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-14T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-162",
+    "started_at": "2025-01-14T12:00:00+00:00",
+    "finished_at": "2025-01-14T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-14T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-163",
+    "started_at": "2025-01-14T14:00:00+00:00",
+    "finished_at": "2025-01-14T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-14T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-164",
+    "started_at": "2025-01-14T16:00:00+00:00",
+    "finished_at": "2025-01-14T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-14T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-165",
+    "started_at": "2025-01-14T18:00:00+00:00",
+    "finished_at": "2025-01-14T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-14T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-166",
+    "started_at": "2025-01-14T20:00:00+00:00",
+    "finished_at": "2025-01-14T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-14T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-167",
+    "started_at": "2025-01-14T22:00:00+00:00",
+    "finished_at": "2025-01-14T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-14T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-14T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-168",
+    "started_at": "2025-01-15T00:00:00+00:00",
+    "finished_at": "2025-01-15T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-15T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-169",
+    "started_at": "2025-01-15T02:00:00+00:00",
+    "finished_at": "2025-01-15T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-15T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-170",
+    "started_at": "2025-01-15T04:00:00+00:00",
+    "finished_at": "2025-01-15T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-15T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-171",
+    "started_at": "2025-01-15T06:00:00+00:00",
+    "finished_at": "2025-01-15T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-15T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-172",
+    "started_at": "2025-01-15T08:00:00+00:00",
+    "finished_at": "2025-01-15T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-15T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-173",
+    "started_at": "2025-01-15T10:00:00+00:00",
+    "finished_at": "2025-01-15T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-15T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-174",
+    "started_at": "2025-01-15T12:00:00+00:00",
+    "finished_at": "2025-01-15T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-15T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-175",
+    "started_at": "2025-01-15T14:00:00+00:00",
+    "finished_at": "2025-01-15T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-15T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-176",
+    "started_at": "2025-01-15T16:00:00+00:00",
+    "finished_at": "2025-01-15T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-15T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-177",
+    "started_at": "2025-01-15T18:00:00+00:00",
+    "finished_at": "2025-01-15T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-15T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-178",
+    "started_at": "2025-01-15T20:00:00+00:00",
+    "finished_at": "2025-01-15T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-15T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-179",
+    "started_at": "2025-01-15T22:00:00+00:00",
+    "finished_at": "2025-01-15T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-15T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-15T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-180",
+    "started_at": "2025-01-16T00:00:00+00:00",
+    "finished_at": "2025-01-16T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-16T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-181",
+    "started_at": "2025-01-16T02:00:00+00:00",
+    "finished_at": "2025-01-16T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-16T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-182",
+    "started_at": "2025-01-16T04:00:00+00:00",
+    "finished_at": "2025-01-16T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-16T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-183",
+    "started_at": "2025-01-16T06:00:00+00:00",
+    "finished_at": "2025-01-16T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-16T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-184",
+    "started_at": "2025-01-16T08:00:00+00:00",
+    "finished_at": "2025-01-16T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-16T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-185",
+    "started_at": "2025-01-16T10:00:00+00:00",
+    "finished_at": "2025-01-16T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-16T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-186",
+    "started_at": "2025-01-16T12:00:00+00:00",
+    "finished_at": "2025-01-16T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-16T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-187",
+    "started_at": "2025-01-16T14:00:00+00:00",
+    "finished_at": "2025-01-16T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-16T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-188",
+    "started_at": "2025-01-16T16:00:00+00:00",
+    "finished_at": "2025-01-16T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-16T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-189",
+    "started_at": "2025-01-16T18:00:00+00:00",
+    "finished_at": "2025-01-16T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-16T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-190",
+    "started_at": "2025-01-16T20:00:00+00:00",
+    "finished_at": "2025-01-16T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-16T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-191",
+    "started_at": "2025-01-16T22:00:00+00:00",
+    "finished_at": "2025-01-16T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-16T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-16T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-192",
+    "started_at": "2025-01-17T00:00:00+00:00",
+    "finished_at": "2025-01-17T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-17T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-193",
+    "started_at": "2025-01-17T02:00:00+00:00",
+    "finished_at": "2025-01-17T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-17T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-194",
+    "started_at": "2025-01-17T04:00:00+00:00",
+    "finished_at": "2025-01-17T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-17T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-195",
+    "started_at": "2025-01-17T06:00:00+00:00",
+    "finished_at": "2025-01-17T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-17T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-196",
+    "started_at": "2025-01-17T08:00:00+00:00",
+    "finished_at": "2025-01-17T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-17T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-197",
+    "started_at": "2025-01-17T10:00:00+00:00",
+    "finished_at": "2025-01-17T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-17T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-198",
+    "started_at": "2025-01-17T12:00:00+00:00",
+    "finished_at": "2025-01-17T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-17T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-199",
+    "started_at": "2025-01-17T14:00:00+00:00",
+    "finished_at": "2025-01-17T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-17T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-200",
+    "started_at": "2025-01-17T16:00:00+00:00",
+    "finished_at": "2025-01-17T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-17T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-201",
+    "started_at": "2025-01-17T18:00:00+00:00",
+    "finished_at": "2025-01-17T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-17T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-202",
+    "started_at": "2025-01-17T20:00:00+00:00",
+    "finished_at": "2025-01-17T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-17T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-203",
+    "started_at": "2025-01-17T22:00:00+00:00",
+    "finished_at": "2025-01-17T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-17T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-17T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-204",
+    "started_at": "2025-01-18T00:00:00+00:00",
+    "finished_at": "2025-01-18T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-18T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-205",
+    "started_at": "2025-01-18T02:00:00+00:00",
+    "finished_at": "2025-01-18T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-18T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-206",
+    "started_at": "2025-01-18T04:00:00+00:00",
+    "finished_at": "2025-01-18T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-18T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-207",
+    "started_at": "2025-01-18T06:00:00+00:00",
+    "finished_at": "2025-01-18T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-18T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-208",
+    "started_at": "2025-01-18T08:00:00+00:00",
+    "finished_at": "2025-01-18T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-18T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-209",
+    "started_at": "2025-01-18T10:00:00+00:00",
+    "finished_at": "2025-01-18T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-18T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-210",
+    "started_at": "2025-01-18T12:00:00+00:00",
+    "finished_at": "2025-01-18T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-18T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-211",
+    "started_at": "2025-01-18T14:00:00+00:00",
+    "finished_at": "2025-01-18T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-18T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-212",
+    "started_at": "2025-01-18T16:00:00+00:00",
+    "finished_at": "2025-01-18T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-18T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-213",
+    "started_at": "2025-01-18T18:00:00+00:00",
+    "finished_at": "2025-01-18T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-18T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-214",
+    "started_at": "2025-01-18T20:00:00+00:00",
+    "finished_at": "2025-01-18T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-18T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-215",
+    "started_at": "2025-01-18T22:00:00+00:00",
+    "finished_at": "2025-01-18T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-18T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-18T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-216",
+    "started_at": "2025-01-19T00:00:00+00:00",
+    "finished_at": "2025-01-19T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-19T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-217",
+    "started_at": "2025-01-19T02:00:00+00:00",
+    "finished_at": "2025-01-19T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-19T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-218",
+    "started_at": "2025-01-19T04:00:00+00:00",
+    "finished_at": "2025-01-19T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-19T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-219",
+    "started_at": "2025-01-19T06:00:00+00:00",
+    "finished_at": "2025-01-19T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-19T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-220",
+    "started_at": "2025-01-19T08:00:00+00:00",
+    "finished_at": "2025-01-19T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-19T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-221",
+    "started_at": "2025-01-19T10:00:00+00:00",
+    "finished_at": "2025-01-19T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-19T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-222",
+    "started_at": "2025-01-19T12:00:00+00:00",
+    "finished_at": "2025-01-19T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-19T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-223",
+    "started_at": "2025-01-19T14:00:00+00:00",
+    "finished_at": "2025-01-19T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-19T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-224",
+    "started_at": "2025-01-19T16:00:00+00:00",
+    "finished_at": "2025-01-19T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-19T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-225",
+    "started_at": "2025-01-19T18:00:00+00:00",
+    "finished_at": "2025-01-19T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-19T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-226",
+    "started_at": "2025-01-19T20:00:00+00:00",
+    "finished_at": "2025-01-19T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-19T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-227",
+    "started_at": "2025-01-19T22:00:00+00:00",
+    "finished_at": "2025-01-19T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-19T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-19T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-228",
+    "started_at": "2025-01-20T00:00:00+00:00",
+    "finished_at": "2025-01-20T01:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-20T00:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T01:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-229",
+    "started_at": "2025-01-20T02:00:00+00:00",
+    "finished_at": "2025-01-20T03:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-20T02:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T03:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-230",
+    "started_at": "2025-01-20T04:00:00+00:00",
+    "finished_at": "2025-01-20T05:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-20T04:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T05:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-231",
+    "started_at": "2025-01-20T06:00:00+00:00",
+    "finished_at": "2025-01-20T07:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-20T06:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T07:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-232",
+    "started_at": "2025-01-20T08:00:00+00:00",
+    "finished_at": "2025-01-20T09:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-20T08:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T09:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-233",
+    "started_at": "2025-01-20T10:00:00+00:00",
+    "finished_at": "2025-01-20T11:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-20T10:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T11:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-234",
+    "started_at": "2025-01-20T12:00:00+00:00",
+    "finished_at": "2025-01-20T13:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-20T12:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T13:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-235",
+    "started_at": "2025-01-20T14:00:00+00:00",
+    "finished_at": "2025-01-20T15:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-20T14:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T15:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-236",
+    "started_at": "2025-01-20T16:00:00+00:00",
+    "finished_at": "2025-01-20T17:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-20T16:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T17:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-237",
+    "started_at": "2025-01-20T18:00:00+00:00",
+    "finished_at": "2025-01-20T19:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-20T18:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T19:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  },
+  {
+    "task_id": "synthetic-238",
+    "started_at": "2025-01-20T20:00:00+00:00",
+    "finished_at": "2025-01-20T21:00:00+00:00",
+    "failed": false,
+    "plan_recorded_at": "2025-01-20T20:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T21:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "inspect local configuration"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": ""
+  },
+  {
+    "task_id": "synthetic-239",
+    "started_at": "2025-01-20T22:00:00+00:00",
+    "finished_at": "2025-01-20T23:00:00+00:00",
+    "failed": true,
+    "plan_recorded_at": "2025-01-20T22:00:00+00:00",
+    "outcome_recorded_at": "2025-01-20T23:00:00+00:00",
+    "plan": {
+      "goal": "Synthetic test",
+      "acceptance": [
+        "Result recorded"
+      ],
+      "steps": [
+        {
+          "id": "one",
+          "description": "deploy production"
+        }
+      ]
+    },
+    "tools_used": [],
+    "failure_type": "synthetic_only"
+  }
+]

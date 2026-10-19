@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-failure-forecast"
+version = "0.1.0"
+description = "Predict Agent Failures Before They Happen: offline static preflight checks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["jsonschema>=4.18,<5"]
+
+[project.urls]
+Repository = "https://github.com/zyf628768-cmyk/AgentFailureForecast"
+Issues = "https://github.com/zyf628768-cmyk/AgentFailureForecast/issues"
+
+[project.scripts]
+forecast = "agent_failure_forecast.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["agent_failure_forecast*"]

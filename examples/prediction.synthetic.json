@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "0.1.0",
+  "mode": "statistical",
+  "readiness": 0,
+  "readiness_is_probability": false,
+  "failure_probability": 0.9987185179052254,
+  "findings": [
+    {
+      "id": "DATA001",
+      "category": "data",
+      "severity": "critical",
+      "evidence": "Matched risk vocabulary: migration",
+      "impact": "Persistent data may be changed irreversibly",
+      "checks": [
+        "Verify backup restoration and migration dry run"
+      ],
+      "repairs": [
+        "Prepare and test a rollback or restore procedure"
+      ],
+      "requires_approval": true,
+      "certainty": "signal",
+      "occurrences": 1
+    },
+    {
+      "id": "NET001",
+      "category": "network",
+      "severity": "medium",
+      "evidence": "Matched risk vocabulary: Fetch",
+      "impact": "External dependency may time out or change",
+      "checks": [
+        "Check timeout, bounded retry and pinned content"
+      ],
+      "repairs": [
+        "Cache verified inputs and specify retry limits"
+      ],
+      "requires_approval": false,
+      "certainty": "signal",
+      "occurrences": 1
+    },
+    {
+      "id": "DEPLOY001",
+      "category": "deployment",
+      "severity": "critical",
+      "evidence": "Matched risk vocabulary: Deploy",
+      "impact": "Live service may be disrupted",
+      "checks": [
+        "Verify target, staged validation and rollback"
+      ],
+      "repairs": [
+        "Require approval and tested rollback before execution"
+      ],
+      "requires_approval": true,
+      "certainty": "signal",
+      "occurrences": 1
+    },
+    {
+      "id": "GIT001",
+      "category": "file",
+      "severity": "high",
+      "evidence": "Git workspace has uncommitted changes",
+      "impact": "Task may fail or exceed its intended boundary",
+      "checks": [
+        "Inspect local diff before writes"
+      ],
+      "repairs": [
+        "Preserve or commit existing work"
+      ],
+      "requires_approval": false,
+      "certainty": "confirmed",
+      "occurrences": 1
+    },
+    {
+      "id": "SAFE001",
+      "category": "data",
+      "severity": "critical",
+      "evidence": "Dangerous step lacks declared reversibility and rollback",
+      "impact": "Task may fail or exceed its intended boundary",
+      "checks": [
+        "Verify restoration independently"
+      ],
+      "repairs": [
+        "Prepare a verified rollback before approval"
+      ],
+      "requires_approval": true,
+      "certainty": "signal",
+      "occurrences": 1
+    },
+    {
+      "id": "SAFE002",
+      "category": "data",
+      "severity": "critical",
+      "evidence": "Data mutation lacks a declared backup",
+      "impact": "Task may fail or exceed its intended boundary",
+      "checks": [
+        "Test backup restoration"
+      ],
+      "repairs": [
+        "Create and verify backup before execution"
+      ],
+      "requires_approval": true,
+      "certainty": "signal",
+      "occurrences": 1
+    },
+    {
+      "id": "NET002",
+      "category": "network",
+      "severity": "medium",
+      "evidence": "Network step lacks declared timeout or bounded retries",
+      "impact": "Task may fail or exceed its intended boundary",
+      "checks": [
+        "Inspect request policy"
+      ],
+      "repairs": [
+        "Declare and enforce timeout and retry bounds"
+      ],
+      "requires_approval": false,
+      "certainty": "signal",
+      "occurrences": 1
+    }
+  ],
+  "checks": [
+    {
+      "kind": "git",
+      "status": "dirty"
+    },
+    {
+      "kind": "config",
+      "name": "pyproject.toml",
+      "valid": true
+    },
+    {
+      "kind": "tool",
+      "available": true
+    },
+    {
+      "kind": "path",
+      "available": true
+    }
+  ],
+  "graph": {
+    "nodes": [
+      "inspect",
+      "migrate",
+      "verify"
+    ],
+    "edges": [
+      {
+        "from": "inspect",
+        "to": "migrate"
+      },
+      {
+        "from": "migrate",
+        "to": "verify"
+      }
+    ],
+    "topological_order": [
+      "inspect",
+      "migrate",
+      "verify"
+    ],
+    "cyclic": false,
+    "findings": []
+  },
+  "limitations": [
+    "Static signals are incomplete; declarations are not proof of safety.",
+    "No network, project scripts or planned commands were executed."
+  ],
+  "as_of": "2026-01-01T00:00:00+00:00",
+  "excluded_future_records": 0,
+  "model": {
+    "eligible": true,
+    "model_version": "logistic-sigmoid-v2-649ea2e4c37b",
+    "samples": 240,
+    "data_version": "26b4545e5893",
+    "split_samples": {
+      "train": 120,
+      "calibration": 48,
+      "selection": 36,
+      "test": 36
+    },
+    "boundaries": {
+      "train_end": "2025-01-10T22:00:00+00:00",
+      "calibration_start": "2025-01-11T00:00:00+00:00",
+      "calibration_end": "2025-01-14T22:00:00+00:00",
+      "selection_start": "2025-01-15T00:00:00+00:00",
+      "selection_end": "2025-01-17T22:00:00+00:00",
+      "test_start": "2025-01-18T00:00:00+00:00",
+      "test_end": "2025-01-20T23:00:00+00:00"
+    },
+    "features": [
+      "steps",
+      "dangerous",
+      "network",
+      "missing_acceptance",
+      "tools"
+    ],
+    "selection_quality": {
+      "calibrated_brier": 2.141388403200475e-06,
+      "baseline_brier": 0.25
+    },
+    "quality": {
+      "raw_brier": 0.0017732285356261166,
+      "calibrated_brier": 2.141388403200475e-06,
+      "baseline_brier": 0.25,
+      "calibration_bins": [
+        {
+          "count": 18,
+          "mean_probability": 0.0016289206771249879,
+          "observed_failure_rate": 0.0
+        },
+        {
+          "count": 18,
+          "mean_probability": 0.998723522724826,
+          "observed_failure_rate": 1.0
+        }
+      ],
+      "role": "untouched_test"
+    },
+    "reason": "passed_selection_gate",
+    "limitations": [
+      "Retrospective selection is not evidence of prospective accuracy; the test block does not select or fit the model.",
+      "Known group IDs are isolated; undisclosed task families and distribution shift need external validation.",
+      "Provenance timestamps are declarations, not authenticated proof.",
+      "Calibration bins have sampling uncertainty; no accuracy guarantee."
+    ]
+  }
+}

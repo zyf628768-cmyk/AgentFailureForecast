@@ -1,0 +1,83 @@
+{
+  "environment": "Windows x64 / CPython 3.12.14",
+  "runtime_dependencies": [],
+  "wheel_install": "fresh venv, pip --no-index, no source-directory cwd or PYTHONPATH",
+  "commands": [
+    {
+      "command": "forecast scan --root . --plan examples/plan.json --output examples/scan.json --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast simulate --root . --plan examples/plan.json --output examples/simulation.json --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast predict --root . --plan examples/plan.json --output examples/prediction.rules.json --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast plan --plan examples/plan.json --output examples/graph.json --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast predict --root . --plan examples/plan.json --history examples/history.synthetic.json --as-of 2026-01-01T00:00:00Z --output examples/prediction.synthetic.json --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast backtest --history examples/history.synthetic.json --output examples/backtest.synthetic.json --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast report --input examples/scan.json --format markdown --output examples/report.md --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast report --input examples/scan.json --format html --output examples/report.html --force",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast --help",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast scan --help",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast plan --help",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast simulate --help",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast predict --help",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast backtest --help",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast report --help",
+      "exit_code": 0
+    },
+    {
+      "command": "forecast --version",
+      "exit_code": 0
+    }
+  ],
+  "cli_invocations": 16,
+  "all_exit_zero": true,
+  "example_schema_validations": 6,
+  "synthetic_data_only": true,
+  "unverified_platforms": [
+    "Linux",
+    "macOS",
+    "Python 3.10",
+    "Python 3.11",
+    "Python 3.13"
+  ],
+  "client_skill_autodiscovery_verified": false
+}

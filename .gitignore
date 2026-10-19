@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.coverage
+.env
+.env.*
+validation-local/
+release-assets/
+test-results.txt
+distribution-verification.json
+release-verification.json

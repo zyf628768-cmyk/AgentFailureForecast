@@ -1,0 +1,81 @@
+name: reviewed-release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Version tag to publish (dispatch on main or that existing tag)
+        required: true
+        default: v0.1.0
+        type: string
+      prerelease:
+        description: Mark experimental MVP as prerelease
+        required: true
+        default: true
+        type: boolean
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ inputs.tag }}
+  cancel-in-progress: false
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Require the matching version tag
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          python -c "import os,tomllib; from pathlib import Path; v=tomllib.loads(Path('pyproject.toml').read_text())['project']['version']; assert os.environ['RELEASE_TAG']=='v'+v; assert os.environ['GITHUB_REF'] in ('refs/heads/main','refs/tags/'+os.environ['RELEASE_TAG'])"
+  validation:
+    needs: guard
+    uses: ./.github/workflows/tests.yml
+  publish:
+    needs: [guard, validation]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install .[test] build setuptools wheel
+      - run: python -m build
+      - run: python scripts/verify_distribution.py --output release-verification.json
+      - name: Prepare an exact local version tag
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          if git show-ref --verify --quiet "refs/tags/$RELEASE_TAG"; then
+            test "$(git rev-parse "$RELEASE_TAG^{commit}")" = "$GITHUB_SHA"
+          else
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' tag -a "$RELEASE_TAG" "$GITHUB_SHA" -m "Verified $RELEASE_TAG"
+          fi
+      - name: Prepare verified release assets
+        env:
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: python scripts/package_release.py --tag "$RELEASE_TAG" --output release-assets
+      - name: Publish after the complete platform matrix passes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          git push origin "refs/tags/$RELEASE_TAG"
+          extra=()
+          if [ "$PRERELEASE" = "true" ]; then extra+=(--prerelease); fi
+          cat docs/release-notes-v0.1.0.md > "$RUNNER_TEMP/release-notes.md"
+          printf '\nRemote validation: the complete OS/Python matrix passed in %s/%s/actions/runs/%s.\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> "$RUNNER_TEMP/release-notes.md"
+          gh release create "$RELEASE_TAG" release-assets/* --verify-tag --title "AgentFailureForecast $RELEASE_TAG" --notes-file "$RUNNER_TEMP/release-notes.md" "${extra[@]}"

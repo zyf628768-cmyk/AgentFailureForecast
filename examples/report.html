@@ -1,0 +1,169 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>AgentFailureForecast</title><h1>AgentFailureForecast</h1><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;engine_version&quot;: &quot;0.1.0&quot;,
+  &quot;mode&quot;: &quot;rules&quot;,
+  &quot;readiness&quot;: 0,
+  &quot;readiness_is_probability&quot;: false,
+  &quot;failure_probability&quot;: null,
+  &quot;findings&quot;: [
+    {
+      &quot;id&quot;: &quot;DATA001&quot;,
+      &quot;category&quot;: &quot;data&quot;,
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;evidence&quot;: &quot;Matched risk vocabulary: migration&quot;,
+      &quot;impact&quot;: &quot;Persistent data may be changed irreversibly&quot;,
+      &quot;checks&quot;: [
+        &quot;Verify backup restoration and migration dry run&quot;
+      ],
+      &quot;repairs&quot;: [
+        &quot;Prepare and test a rollback or restore procedure&quot;
+      ],
+      &quot;requires_approval&quot;: true,
+      &quot;certainty&quot;: &quot;signal&quot;,
+      &quot;occurrences&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;NET001&quot;,
+      &quot;category&quot;: &quot;network&quot;,
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;evidence&quot;: &quot;Matched risk vocabulary: Fetch&quot;,
+      &quot;impact&quot;: &quot;External dependency may time out or change&quot;,
+      &quot;checks&quot;: [
+        &quot;Check timeout, bounded retry and pinned content&quot;
+      ],
+      &quot;repairs&quot;: [
+        &quot;Cache verified inputs and specify retry limits&quot;
+      ],
+      &quot;requires_approval&quot;: false,
+      &quot;certainty&quot;: &quot;signal&quot;,
+      &quot;occurrences&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;DEPLOY001&quot;,
+      &quot;category&quot;: &quot;deployment&quot;,
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;evidence&quot;: &quot;Matched risk vocabulary: Deploy&quot;,
+      &quot;impact&quot;: &quot;Live service may be disrupted&quot;,
+      &quot;checks&quot;: [
+        &quot;Verify target, staged validation and rollback&quot;
+      ],
+      &quot;repairs&quot;: [
+        &quot;Require approval and tested rollback before execution&quot;
+      ],
+      &quot;requires_approval&quot;: true,
+      &quot;certainty&quot;: &quot;signal&quot;,
+      &quot;occurrences&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;GIT001&quot;,
+      &quot;category&quot;: &quot;file&quot;,
+      &quot;severity&quot;: &quot;high&quot;,
+      &quot;evidence&quot;: &quot;Git workspace has uncommitted changes&quot;,
+      &quot;impact&quot;: &quot;Task may fail or exceed its intended boundary&quot;,
+      &quot;checks&quot;: [
+        &quot;Inspect local diff before writes&quot;
+      ],
+      &quot;repairs&quot;: [
+        &quot;Preserve or commit existing work&quot;
+      ],
+      &quot;requires_approval&quot;: false,
+      &quot;certainty&quot;: &quot;confirmed&quot;,
+      &quot;occurrences&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;SAFE001&quot;,
+      &quot;category&quot;: &quot;data&quot;,
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;evidence&quot;: &quot;Dangerous step lacks declared reversibility and rollback&quot;,
+      &quot;impact&quot;: &quot;Task may fail or exceed its intended boundary&quot;,
+      &quot;checks&quot;: [
+        &quot;Verify restoration independently&quot;
+      ],
+      &quot;repairs&quot;: [
+        &quot;Prepare a verified rollback before approval&quot;
+      ],
+      &quot;requires_approval&quot;: true,
+      &quot;certainty&quot;: &quot;signal&quot;,
+      &quot;occurrences&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;SAFE002&quot;,
+      &quot;category&quot;: &quot;data&quot;,
+      &quot;severity&quot;: &quot;critical&quot;,
+      &quot;evidence&quot;: &quot;Data mutation lacks a declared backup&quot;,
+      &quot;impact&quot;: &quot;Task may fail or exceed its intended boundary&quot;,
+      &quot;checks&quot;: [
+        &quot;Test backup restoration&quot;
+      ],
+      &quot;repairs&quot;: [
+        &quot;Create and verify backup before execution&quot;
+      ],
+      &quot;requires_approval&quot;: true,
+      &quot;certainty&quot;: &quot;signal&quot;,
+      &quot;occurrences&quot;: 1
+    },
+    {
+      &quot;id&quot;: &quot;NET002&quot;,
+      &quot;category&quot;: &quot;network&quot;,
+      &quot;severity&quot;: &quot;medium&quot;,
+      &quot;evidence&quot;: &quot;Network step lacks declared timeout or bounded retries&quot;,
+      &quot;impact&quot;: &quot;Task may fail or exceed its intended boundary&quot;,
+      &quot;checks&quot;: [
+        &quot;Inspect request policy&quot;
+      ],
+      &quot;repairs&quot;: [
+        &quot;Declare and enforce timeout and retry bounds&quot;
+      ],
+      &quot;requires_approval&quot;: false,
+      &quot;certainty&quot;: &quot;signal&quot;,
+      &quot;occurrences&quot;: 1
+    }
+  ],
+  &quot;checks&quot;: [
+    {
+      &quot;kind&quot;: &quot;git&quot;,
+      &quot;status&quot;: &quot;dirty&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;config&quot;,
+      &quot;name&quot;: &quot;pyproject.toml&quot;,
+      &quot;valid&quot;: true
+    },
+    {
+      &quot;kind&quot;: &quot;tool&quot;,
+      &quot;available&quot;: true
+    },
+    {
+      &quot;kind&quot;: &quot;path&quot;,
+      &quot;available&quot;: true
+    }
+  ],
+  &quot;graph&quot;: {
+    &quot;nodes&quot;: [
+      &quot;inspect&quot;,
+      &quot;migrate&quot;,
+      &quot;verify&quot;
+    ],
+    &quot;edges&quot;: [
+      {
+        &quot;from&quot;: &quot;inspect&quot;,
+        &quot;to&quot;: &quot;migrate&quot;
+      },
+      {
+        &quot;from&quot;: &quot;migrate&quot;,
+        &quot;to&quot;: &quot;verify&quot;
+      }
+    ],
+    &quot;topological_order&quot;: [
+      &quot;inspect&quot;,
+      &quot;migrate&quot;,
+      &quot;verify&quot;
+    ],
+    &quot;cyclic&quot;: false,
+    &quot;findings&quot;: []
+  },
+  &quot;limitations&quot;: [
+    &quot;Static signals are incomplete; declarations are not proof of safety.&quot;,
+    &quot;No network, project scripts or planned commands were executed.&quot;
+  ]
+}</pre></html>

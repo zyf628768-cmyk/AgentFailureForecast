@@ -1,0 +1,24 @@
+{
+  "nodes": [
+    "inspect",
+    "migrate",
+    "verify"
+  ],
+  "edges": [
+    {
+      "from": "inspect",
+      "to": "migrate"
+    },
+    {
+      "from": "migrate",
+      "to": "verify"
+    }
+  ],
+  "topological_order": [
+    "inspect",
+    "migrate",
+    "verify"
+  ],
+  "cyclic": false,
+  "findings": []
+}
